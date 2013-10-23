@@ -9,7 +9,7 @@ class Php55Zookeeper < AbstractPhp55Extension
   def self.init
     super
     option 'disable-session', 'Disable zookeeper session handler support'
-    depends_on 'zookeeper'
+    depends_on 'zookeeper' => '--c'
   end
 
   init
